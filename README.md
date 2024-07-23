@@ -18,7 +18,7 @@ pip install -r requirements.txt
 1. Run the script
 
 ```bash
-python main.py [--presentmon PRESENTMON FILE/PATH] [--workload WORKLOAD FILE/PATH]
+python -m automation.cli [--presentmon PRESENTMON FILE/PATH] [--workload WORKLOAD FILE/PATH]
 ```
 
 2. The script will start running the stress test. The script will run for 70 hours.
