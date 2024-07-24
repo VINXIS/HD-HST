@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  automation:
+    build: .
+    container_name: automation_container
+    volumes:
+      - .:/usr/src/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: ["python", "-m", "automation.cli", "--presentmon", "PresentMon64.exe", "--workload", "workload.exe"]
